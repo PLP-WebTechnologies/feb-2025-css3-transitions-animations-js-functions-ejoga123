@@ -1,0 +1,41 @@
+body {
+  transition: background-color 0.5s, color 0.5s;
+  background-color: #fff;
+  color: #333;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
